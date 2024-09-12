@@ -1,0 +1,9 @@
+/* Center the entire app */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+hr {
+  margin: 20px 0;
+}

@@ -1,0 +1,13 @@
+h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 10px;
+  align-self: center;
+}
