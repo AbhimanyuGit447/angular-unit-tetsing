@@ -1,50 +1,81 @@
-import { TestBed } from '@angular/core/testing';
 
-import { MathService } from './math.service';
+// describe
 
+// beforeEach
+
+//afterEach
+
+
+
+
+import { MathService } from "./math.service";
 
 describe("MathService", () => {
-  // check if the instance is created
-  //add
-  //subtract
-
-  // can make more for /, * etc
 
   let service : MathService;
 
   beforeEach(() => {
      service = new MathService();
+     console.log('My TEST');
+
   })
 
-  it("should create mathservice", () => {
+  afterEach(() => {
+    console.log('clear my test data');
 
+  })
+
+  beforeAll(() => {
+    console.log('make a store');
+
+  })
+
+  afterAll(() => {
+
+  })
+
+  it("should create a mathservice instance", () => {
     expect(service).toBeTruthy();
   })
 
+  // add
   it("should add two numbers correctly", () => {
 
-    const result = service.add(10,20);
-    //code to test
-    expect(result).toEqual(30);
-  });
+
+    const sum = service.add(20, 20);
+
+    expect(sum).toEqual(40);
+
+  })
 
 
   it("should subtract two numbers correctly", () => {
 
-    const result = service.subtract(20,10);
-    //code to test
-    expect(result).toEqual(10);
-  });
+
+    const result = service.subtract(20, 20);
+
+    expect(result).toEqual(0);
+
+  })
+
+  it("should get exception message divide two numbers correctly", () => {
+
+
+    expect(() => service.divide(20,0)).toThrowError("Cannot divide by zero");
+
+  })
 
   it("should divide two numbers correctly", () => {
 
-    const result = service.divide(2000,1000);
-    //code to test
-    expect(result).toEqual(2);
-  });
+    const result = service.divide(20, 20);
 
-  it("should throw an error when dividing by zero", () => {
-    expect(() => service.divide(200,0)).toThrowError('cannot divide by zero')
+    expect(result).toEqual(1);
+
 
   })
+
+
+
 })
+
+// it

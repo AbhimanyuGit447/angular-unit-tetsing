@@ -21,7 +21,7 @@ button:hover {
 }
 
 .completed h3 {
-  color: #28a745;
+  color: #2ae600;
   text-decoration: line-through;
 }
 
@@ -39,7 +39,7 @@ button:hover {
 }
 
 .completed {
-  background-color: #e9f7ef;
+  background-color: #f85454;
 }
 
 
